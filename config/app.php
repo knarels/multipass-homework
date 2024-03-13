@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+use TemperatureSensor\Providers\TemperatureSensorServiceProvider;
 
 return [
 
@@ -159,6 +160,7 @@ return [
         /*
          * Package Service Providers...
          */
+        TemperatureSensorServiceProvider::class,
 
         /*
          * Application Service Providers...

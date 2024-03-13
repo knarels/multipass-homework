@@ -1,0 +1,19 @@
+### Get Temperature Sensor
+
+GET http://localhost/api/temperature_sensor/3bd84e25-d497-329a-b1cc-a4bcc8e71d42
+Accept: application/json
+
+### Create Temperature Sensor
+
+POST http://localhost/api/temperature_sensor
+Accept: application/json
+
+### Delete Temperature Sensor
+
+DELETE http://localhost/api/temperature_sensor/3bd84e25-d497-329a-b1cc-a4bcc8e71d42
+Accept: application/json
+
+### Create Temperature Sensor
+
+GET http://localhost/api/temperature_sensor/eb90c5b4-5f3b-32fa-912e-6342b775f964/data
+Accept: application/json

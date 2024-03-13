@@ -1,0 +1,61 @@
+### Get Temperature Sensor Reading
+
+GET http://localhost/api/temperature_sensor/reading/1
+Accept: application/json
+
+### Create Temperature Sensor Reading
+
+POST http://localhost/api/temperature_sensor/reading
+Accept: application/json
+Content-Type: application/json
+
+{
+    "temperatureSensorReadingInfo": {
+        "sensor_uuid": "3bd50648-084a-3f26-afaa-1abc885afe0c",
+        "temperature_fahrenheit": 100.111
+    }
+}
+
+### Update Temperature Sensor Reading
+
+PUT http://localhost/api/temperature_sensor/reading
+Accept: application/json
+Content-Type: application/json
+
+{
+    "temperatureSensorReadingInfo": {
+        "id": 2,
+        "temperature_fahrenheit": 100,
+        "temperature_celsius": 55.55
+    }
+}
+
+### Delete Temperature Sensor Reading
+
+DELETE http://localhost/api/temperature_sensor/reading/3
+Accept: application/json
+
+### Get average Temperature Sensor Reading data in date range
+
+POST http://localhost/api/temperature_sensor/reading/average/range
+Accept: application/json
+Content-Type: application/json
+
+{
+    "temperatureSensorReadingInfo": {
+        "start_date": "2024-03-11",
+        "end_date": "2024-03-11"
+    }
+}
+
+### Get average Temperature Sensor Reading data on specific hour
+
+POST http://localhost/api/temperature_sensor/reading/average/hour
+Accept: application/json
+Content-Type: application/json
+
+{
+    "temperatureSensorReadingInfo": {
+        "date_hour": "2024-03-11 20:00:00"
+    }
+}

@@ -25,7 +25,10 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "TemperatureSensor\\": "packages/TemperatureSensor/src",
+            "TemperatureSensor\\Factories\\": "packages/TemperatureSensor/database/factories",
+            "TemperatureSensor\\Seeders\\": "packages/TemperatureSensor/database/seeders"
         }
     },
     "autoload-dev": {
